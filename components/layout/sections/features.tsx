@@ -11,57 +11,57 @@ interface FeaturesProps {
 const featureList: FeaturesProps[] = [
   {
     icon: "TabletSmartphone",
-    title: "Mobile Friendly",
+    title: "Mobile First Experience",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+      "Our responsive designs ensure a seamless experience on any device, embodying our passion for turning complex challenges into creative solutions.",
   },
   {
     icon: "BadgeCheck",
-    title: "Social Proof",
+    title: "Trusted Community",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+      "We’re more than just a service – our community of passionate full-stack developers delivers innovative, proven results you can trust.",
   },
   {
     icon: "Goal",
-    title: "Targeted Content",
+    title: "User-Centered Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      "We transform intricate problems into intuitive digital experiences that meet your audience's needs and drive engagement.",
   },
   {
     icon: "PictureInPicture",
-    title: "Strong Visuals",
+    title: "Visually Inspiring",
     description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+      "Our designs merge striking visuals with seamless functionality, ensuring your brand stands out with creative impact.",
   },
   {
     icon: "MousePointerClick",
-    title: "Clear CTA",
+    title: "Engagement-Driven",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+      "Clear calls-to-action and collaborative elements guide users to connect, fostering a dynamic digital community around your brand.",
   },
   {
     icon: "Newspaper",
-    title: "Clear Headline",
+    title: "Compelling Messaging",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "We tell your brand’s story with powerful, creative messaging that resonates and drives innovative project outcomes.",
   },
 ];
+
 
 export const FeaturesSection = () => {
   return (
     <section id="features" className="container py-24 sm:py-32">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Features
+      Why Choose Us?
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        What Makes Us Different
+        More Than Just a Tool: A Community of Innovators
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-        facere tenetur.
+        We blend innovation, aesthetics, and functionality to create seamless digital experiences.  
+        Our user-first approach ensures intuitive, high-performing designs tailored to your brand’s success.
       </h3>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
