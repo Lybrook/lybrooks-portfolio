@@ -1,4 +1,4 @@
-import { BenefitsSection } from "@/components/layout/sections/benefits";
+import BenefitsSection from "@/components/layout/sections/benefits";
 import { CommunitySection } from "@/components/layout/sections/community";
 import { ContactSection } from "@/components/layout/sections/contact";
 import { FAQSection } from "@/components/layout/sections/faq";
@@ -10,10 +10,11 @@ import { ServicesSection } from "@/components/layout/sections/services";
 import { SponsorsSection } from "@/components/layout/sections/sponsors";
 import { TeamSection } from "@/components/layout/sections/team";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
+import { SkillsSection } from "@/components/layout/sections/skills";
 
 export const metadata = {
-  title: "Shadcn - Landing template",
-  description: "Free Shadcn landing page for developers",
+  title: "Lybrook's website",
+  description: "FullStack Web developer",
   openGraph: {
     type: "website",
     url: "https://github.com/nobruf/shadcn-landing-page.git",
@@ -43,14 +44,15 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <SponsorsSection />
+      {/* <SponsorsSection /> */}
+      <SkillsSection />
       <BenefitsSection />
       <FeaturesSection />
       <ServicesSection />
-      <TestimonialSection />
-      <TeamSection />
-      <CommunitySection />
-      <PricingSection />
+      {/* <TestimonialSection /> */}
+      {/* <TeamSection /> */}
+      {/* <CommunitySection /> */}
+      {/* <PricingSection /> */}
       <ContactSection />
       <FAQSection />
       <FooterSection />
