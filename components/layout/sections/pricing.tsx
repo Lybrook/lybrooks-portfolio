@@ -25,48 +25,57 @@ interface PlanProps {
 
 const plans: PlanProps[] = [
   {
-    title: "Free",
+    title: "Starter Web App",
     popular: 0,
-    price: 0,
+    price: 50,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Start Free Trial",
+      "A simple one-page web application built with Python, Flask, and React. Ideal for small projects",
+    buttonText: "Contact Us",
     benefitList: [
-      "1 team member",
-      "1 GB storage",
-      "Upto 2 pages",
-      "Community support",
-      "AI assistance",
+      "7-day delivery",
+      "1 Revision",
+      "2 pages",
+      // "Design customization",
+      "Content upload",
+      "Responsive design",
+      "Source code",
+      // "Detailed code comments",
     ],
   },
   {
-    title: "Premium",
+    title: "Business Web App",
     popular: 1,
-    price: 45,
+    price: 150,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Get starterd",
+      "A multi-page web application featuring enhanced functionality and RESTful API integration.",
+    buttonText: "Get started",
     benefitList: [
-      "4 team member",
-      "8 GB storage",
-      "Upto 6 pages",
-      "Priority support",
-      "AI assistance",
+      "14-day delivery",
+      "2 Revisions",
+      "5 pages",
+      "Design customization",
+      "Content upload",
+      "Responsive design",
+      "Source code",
+      // "Detailed code comments",
     ],
   },
   {
-    title: "Enterprise",
+    title: "Enterprise Web App",
     popular: 0,
-    price: 120,
+    price: 300,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Contact US",
+      "A complete full stack solution and deployment support. Ideal for enterprise level projects.",
+    buttonText: "Contact Us",
     benefitList: [
-      "10 team member",
-      "20 GB storage",
-      "Upto 10 pages",
-      "Phone & email support",
-      "AI assistance",
+      "30-day delivery",
+      "4 Revisions",
+      "10 pages",
+      "Design customization",
+      "Content upload",
+      "Responsive design",
+      "Source code",
+      "Detailed code comments",
     ],
   },
 ];
@@ -75,15 +84,15 @@ export const PricingSection = () => {
   return (
     <section className="container py-24 sm:py-32">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Pricing
+        Packages
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        Get unlimitted access
+        Offering the Very Best
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground pb-14">
-        Lorem ipsum dolor sit amet consectetur adipisicing reiciendis.
+        
       </h3>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
@@ -104,10 +113,10 @@ export const PricingSection = () => {
                   {description}
                 </CardDescription>
 
-                <div>
+                {/* <div>
                   <span className="text-3xl font-bold">${price}</span>
                   <span className="text-muted-foreground"> /month</span>
-                </div>
+                </div> */}
               </CardHeader>
 
               <CardContent className="flex">
