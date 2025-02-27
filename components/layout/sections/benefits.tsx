@@ -2,80 +2,84 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
 import { icons } from "lucide-react";
 
-interface BenefitsProps {
-  icon: string;
+interface ProjectProps {
+  image: string;
   title: string;
+  github: string;
+  liveDemo?: string;
   description: string;
+  details: string[];
 }
 
-const benefitList: BenefitsProps[] = [
+const projectList: ProjectProps[] = [
   {
-    icon: "Blocks",
-    title: "Build Brand Trust",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+    image: "/furniture1.jpeg",
+    title: "Furniture Inventory",
+    github: "https://github.com/Lybrook/e-commerce-furniture",
+    liveDemo: "https://e-commerce-furniture-six.vercel.app/",
+    description: "Web Application to save built furniture built and available in stock that can be presented to clients to view.",
+    details: [
+      "Designed and implemented full stack app using Python, Flask, JavaScript, React and Tailwind.",
+      "Developed RESTful APIs for inventory management, ensuring seamless data retrieval and updates.",
+      "Integrated SQLite for structured data storage and implemented CRUD operations for inventory tracking.",
+      "Deployed the backend on Render and the frontend on Vercel for scalability and performance."
+    ]
   },
   {
-    icon: "LineChart",
-    title: "More Leads",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
-  },
-  {
-    icon: "Wallet",
-    title: "Higher Conversions",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
-  },
-  {
-    icon: "Sparkle",
-    title: "Test Marketing Ideas",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
-  },
+    image: "/Kosala1.jpeg",
+    title: "Furniture Website",
+    github: "https://github.com/Lybrook/furniture",
+    liveDemo: "https://kosalas.vercel.app/",
+    description: "Web application for contacting a carpenter, showcasing completed projects, and displaying company details.",
+    details: [
+      "Designed and implemented the application using JavaScript, React, and Tailwind CSS for a modern UI/UX.",
+      "Implemented lazy loading and React Suspense for optimized route-based code splitting and seamless transitions.",
+      "Utilized the agile development lifecycle to plan, iterate, and refine workflows."
+    ]
+  }
 ];
 
-export const BenefitsSection = () => {
+const ProjectsSection = () => {
   return (
-    <section id="benefits" className="container py-24 sm:py-32">
-      <div className="grid lg:grid-cols-2 place-items-center lg:gap-24">
+    <section id="projects" className="container py-24 sm:py-32">
+      <div className="grid lg:grid-cols-1 place-items-center lg:gap-24">
         <div>
-          <h2 className="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Your Shortcut to Success
-          </h2>
+          <h2 className="text-lg text-primary mb-2 tracking-wider">Technical Projects</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Showcasing My Work</h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-            ducimus reprehenderit architecto rerum similique facere odit
-            deleniti necessitatibus quo quae.
+            Here are some of the technical projects I have worked on, demonstrating my skills and expertise in various technologies.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-4 w-full">
-          {benefitList.map(({ icon, title, description }, index) => (
+          {projectList.map(({ image, title, github, liveDemo, description, details }, index) => (
             <Card
               key={title}
               className="bg-muted/50 dark:bg-card hover:bg-background transition-all delay-75 group/number"
             >
               <CardHeader>
-                <div className="flex justify-between">
-                  <Icon
-                    name={icon as keyof typeof icons}
-                    size={32}
-                    color="hsl(var(--primary))"
-                    className="mb-6 text-primary"
-                  />
+                <div className="flex justify-between items-center">
+                  <img src={image} alt={title} className="w-32 h-32 object-cover mb-6" />
                   <span className="text-5xl text-muted-foreground/15 font-medium transition-all delay-75 group-hover/number:text-muted-foreground/30">
                     0{index + 1}
                   </span>
                 </div>
-
                 <CardTitle>{title}</CardTitle>
               </CardHeader>
 
               <CardContent className="text-muted-foreground">
-                {description}
+                <p>{description}</p>
+                <ul className="list-disc pl-5 mt-2">
+                  {details.map((detail, idx) => (
+                    <li key={idx}>{detail}</li>
+                  ))}
+                </ul>
+                <div className="mt-4">
+                  <a href={github} className="text-primary mr-4" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  {liveDemo && (
+                    <a href={liveDemo} className="text-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                  )}
+                </div>
               </CardContent>
             </Card>
           ))}
@@ -84,3 +88,5 @@ export const BenefitsSection = () => {
     </section>
   );
 };
+
+export default ProjectsSection;
