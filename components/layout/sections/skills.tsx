@@ -24,7 +24,7 @@ const skills: SkillProps[] = [
 
 export const SkillsSection = () => {
   return (
-    <section id="skills" className="max-w-[75%] mx-auto pb-24 sm:pb-32 bg-black text-white p-8 rounded-lg">
+    <section id="skills" className="max-w-[75%] mx-auto pb-24 sm:pb-32 bg-white dark:bg-black text-black dark:text-white p-8 rounded-lg">
       <h2 className="text-lg md:text-xl text-center mb-6 text-orange-400 font-bold">Core Skills</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
         {skills.map(({ icon, name }) => (
