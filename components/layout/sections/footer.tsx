@@ -1,118 +1,66 @@
 import { Separator } from "@/components/ui/separator";
-import { ChevronsDownIcon } from "lucide-react";
 import Link from "next/link";
+import React from "react";
+import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
 
 export const FooterSection = () => {
   return (
-    <footer id="footer" className="container py-24 sm:py-32">
-      <div className="p-10 bg-card border border-secondary rounded-2xl">
-        <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
-          <div className="col-span-full xl:col-span-2">
-            <Link href="#" className="flex font-bold items-center">
-              <ChevronsDownIcon className="w-9 h-9 mr-2 bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg border border-secondary" />
-
-              <h3 className="text-2xl">Shadcn</h3>
-            </Link>
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Contact</h3>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Github
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Twitter
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Instagram
-              </Link>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Platforms</h3>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                iOS
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Android
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Web
-              </Link>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Help</h3>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Contact Us
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                FAQ
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Feedback
-              </Link>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Socials</h3>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Twitch
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Discord
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Dribbble
-              </Link>
-            </div>
-          </div>
+    <footer id="footer" className="bg-black text-white text-center py-6">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+        <div className="flex flex-col items-center md:text-center space-y-1">
+          <div className="text-4xl font-extrabold text-yellow-500">LS</div>
+          <p className="text-lg font-medium text-gray-200">Lybrooks Snagsolvers</p>
+          <p className="text-sm text-gray-400 italic">Software Engineers</p>
         </div>
 
-        <Separator className="my-6" />
-        <section className="">
-          <h3 className="">
-            &copy; 2024 Designed and developed by
-            <Link
-              target="_blank"
-              href="https://github.com/leoMirandaa"
-              className="text-primary transition-all border-primary hover:border-b-2 ml-1"
-            >
-              Leo Miranda
-            </Link>
-          </h3>
-        </section>
+        <div className="flex items-center space-x-4">
+          <a
+            href="https://www.instagram.com/kosalasfurniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="relative group hover:text-gray-400 transition duration-300 ease-in-out transform hover:scale-125"
+          >
+            <FaInstagram className="size-6" />
+            <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 scale-0 group-hover:scale-100 transition-transform bg-black text-white text-xs px-2 py-1 rounded">
+              Instagram
+            </span>
+          </a>
+
+          <a
+            href="https://www.facebook.com/kosalasfurniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            className="relative group hover:text-gray-400 transition duration-300 ease-in-out transform hover:scale-125"
+          >
+            <FaFacebook className="size-6" />
+            <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 scale-0 group-hover:scale-100 transition-transform bg-black text-white text-xs px-2 py-1 rounded">
+              Facebook
+            </span>
+          </a>
+
+          <a
+            href="https://www.twitter.com/kosalasfurniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+            className="relative group hover:text-gray-400 transition duration-300 ease-in-out transform hover:scale-125"
+          >
+            <FaTwitter className="size-6" />
+            <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 scale-0 group-hover:scale-100 transition-transform bg-black text-white text-xs px-2 py-1 rounded">
+              Twitter
+            </span>
+          </a>
+        </div>
+
+        <div className="text-sm md:text-right text-gray-400 space-y-1">
+          <p>&copy; {new Date().getFullYear()} Lybrooks Snagsolvers | Brand</p>
+          <p>
+            Development & Website by {" "}
+            <span className="text-orange-500 font-semibold">LYBROOK</span>
+          </p>
+        </div>
       </div>
     </footer>
   );
