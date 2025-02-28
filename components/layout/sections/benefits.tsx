@@ -15,7 +15,7 @@ const projectList: ProjectProps[] = [
   {
     image: "/furniture1.jpeg",
     title: "Furniture Inventory",
-    github: "https://github.com/Lybrook/e-commerce-furniture",
+    github: "https://github.com/Lybrook",
     liveDemo: "https://e-commerce-furniture-six.vercel.app/",
     description: "Web Application to save built furniture built and available in stock that can be presented to clients to view.",
     details: [
@@ -28,7 +28,7 @@ const projectList: ProjectProps[] = [
   {
     image: "/Kosala1.jpeg",
     title: "Furniture Website",
-    github: "https://github.com/Lybrook/furniture",
+    github: "https://github.com/Lybrook",
     liveDemo: "https://kosalas.vercel.app/",
     description: "Web application for contacting a carpenter, showcasing completed projects, and displaying company details.",
     details: [
