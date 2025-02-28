@@ -18,7 +18,7 @@ export const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <Badge variant="outline" className="text-sm py-2">
+          <Badge variant="outline" className="text-sm py-2" role="status">
             <span className="mr-2 text-primary font-semibold">Software Engineer</span>
           </Badge>
 
