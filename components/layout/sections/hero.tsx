@@ -22,13 +22,105 @@ export const HeroSection = () => {
             <span className="mr-2 text-primary font-semibold">Software Engineer</span>
           </Badge>
 
-          <h1 className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-extrabold leading-tight">
-            <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-              Lybrooks Snagsolvers
-            </span>
-          </h1>
+          <div className="relative w-full flex justify-center items-center">
+            <motion.svg
+              width="100"
+              height="100"
+              viewBox="0 0 100 100"
+              className="absolute left-0"
+              initial={{ x: -50, opacity: 0 }}
+              animate={{ x: [0, 50, 0], opacity: [0, 1, 1, 1] }}
+              transition={{ duration: 2, ease: "easeInOut" }}
+            >
+              {/* Head */}
+              <circle cx="50" cy="20" r="8" stroke="orange" strokeWidth="2" fill="none" />
+              {/* Body */}
+              <line x1="50" y1="28" x2="50" y2="50" stroke="orange" strokeWidth="2" />
+              {/* Arms */}
+              <motion.line
+                x1="40"
+                y1="35"
+                x2="60"
+                y2="35"
+                stroke="orange"
+                strokeWidth="2"
+                initial={{ rotate: 0 }}
+                animate={{ rotate: [0, 20, -20, 0] }}
+                transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
+              />
+              {/* Legs */}
+              <motion.line
+                x1="50"
+                y1="50"
+                x2="40"
+                y2="70"
+                stroke="orange"
+                strokeWidth="2"
+                initial={{ rotate: 0 }}
+                animate={{ rotate: [0, 20, -20, 0] }}
+                transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
+              />
+              <motion.line
+                x1="50"
+                y1="50"
+                x2="60"
+                y2="70"
+                stroke="orange"
+                strokeWidth="2"
+                initial={{ rotate: 0 }}
+                animate={{ rotate: [0, -20, 20, 0] }}
+                transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
+              />
+              {/* Smiling Emoji */}
+              <motion.circle
+                cx="50"
+                cy="20"
+                r="8"
+                fill="yellow"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 1.5, duration: 0.5 }}
+              />
+              <motion.circle
+                cx="47"
+                cy="18"
+                r="1"
+                fill="black"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 1.5, duration: 0.5 }}
+              />
+              <motion.circle
+                cx="53"
+                cy="18"
+                r="1"
+                fill="black"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 1.5, duration: 0.5 }}
+              />
+              <motion.path
+                d="M 47 22 Q 50 25 53 22"
+                stroke="black"
+                strokeWidth="1"
+                fill="none"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 1.5, duration: 0.5 }}
+              />
+            </motion.svg>
 
-          <p className={`max-w-screen-sm mx-auto text-lg md:text-xl leading-relaxed font-serif ${theme === "light" ? "text-white" : "text-black"}`}>
+            <motion.span
+              className="text-transparent bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text text-4xl md:text-6xl font-extrabold"
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1.5, ease: "easeInOut" }}
+            >
+              SnaGGsoLLveRs
+            </motion.span>
+          </div>
+
+          <p className={`max-w-screen-sm mx-auto text-lg md:text-xl leading-relaxed font-serif ${theme === "light" ? "text-black" : "text-white"}`}>
             {`Hi, we're more than just a tool, we're a community of passionate full-stack developers 🚀. We thrive on turning complex challenges into creative software solutions. Let's connect and build something amazing together! 🤝`}
           </p>
 
@@ -51,9 +143,7 @@ export const HeroSection = () => {
             width={1200}
             height={1200}
             className="w-full md:w-[1200px] mx-auto rounded-lg relative leading-none flex items-center border border-secondary border-t-primary/30 shadow-lg"
-            src={
-              theme === "light" ? "/portfolio-light.jpeg" : "/portfolio-dark.jpeg"
-            }
+            src={theme === "light" ? "/portfolio-light.jpeg" : "/portfolio-dark.jpeg"}
             alt="dashboard"
           />
           <div className="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg"></div>
