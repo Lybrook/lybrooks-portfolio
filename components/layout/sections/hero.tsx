@@ -28,7 +28,7 @@ export const HeroSection = () => {
             </span>
           </h1>
 
-          <p className="max-w-screen-sm mx-auto text-lg md:text-xl text-white leading-relaxed font-serif">
+          <p className={`max-w-screen-sm mx-auto text-lg md:text-xl leading-relaxed font-serif ${theme === "light" ? "text-white" : "text-black"}`}>
             {`Hi, we're more than just a tool, we're a community of passionate full-stack developers 🚀. We thrive on turning complex challenges into creative software solutions. Let's connect and build something amazing together! 🤝`}
           </p>
 
