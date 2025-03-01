@@ -34,43 +34,6 @@ export const HeroSection = () => {
             >
               {/* Head */}
               <circle cx="50" cy="20" r="8" stroke="orange" strokeWidth="2" fill="none" />
-              {/* Body */}
-              <line x1="50" y1="28" x2="50" y2="50" stroke="orange" strokeWidth="2" />
-              {/* Arms */}
-              <motion.line
-                x1="40"
-                y1="35"
-                x2="60"
-                y2="35"
-                stroke="orange"
-                strokeWidth="2"
-                initial={{ rotate: 0 }}
-                animate={{ rotate: [0, 20, -20, 0] }}
-                transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
-              />
-              {/* Legs */}
-              <motion.line
-                x1="50"
-                y1="50"
-                x2="40"
-                y2="70"
-                stroke="orange"
-                strokeWidth="2"
-                initial={{ rotate: 0 }}
-                animate={{ rotate: [0, 20, -20, 0] }}
-                transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
-              />
-              <motion.line
-                x1="50"
-                y1="50"
-                x2="60"
-                y2="70"
-                stroke="orange"
-                strokeWidth="2"
-                initial={{ rotate: 0 }}
-                animate={{ rotate: [0, -20, 20, 0] }}
-                transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
-              />
               {/* Smiling Emoji */}
               <motion.circle
                 cx="50"
@@ -143,7 +106,7 @@ export const HeroSection = () => {
             width={1200}
             height={1200}
             className="w-full md:w-[1200px] mx-auto rounded-lg relative leading-none flex items-center border border-secondary border-t-primary/30 shadow-lg"
-            src={theme === "light" ? "/portfolio-light.jpeg" : "/portfolio-dark.jpeg"}
+            src={theme === "light" ? "/portfolioo-light.jpeg" : "/portfolioo-dark.jpeg"}
             alt="dashboard"
           />
           <div className="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg"></div>
