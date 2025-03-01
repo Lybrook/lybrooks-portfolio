@@ -23,14 +23,10 @@
 1. Clone this repositoy:
 
 ```bash
-git clone https://github.com/nobruf/shadcn-landing-page.git
+git clone  https://github.com/Lybrook/lybrooks-portfolio
 ```
 
 2. Go into project
-
-```bash
-cd shadcn-landing-page
-```
 
 3. Install dependencies
 
