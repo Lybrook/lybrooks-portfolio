@@ -15,7 +15,7 @@ export const FooterSection = () => {
 
         <div className="flex items-center space-x-4">
           <a
-            href="https://www.instagram.com/kosalasfurniture"
+            href="https://www.instagram.com/lyb_rook/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -28,7 +28,7 @@ export const FooterSection = () => {
           </a>
 
           <a
-            href="https://www.facebook.com/kosalasfurniture"
+            href="https://www.facebook.com/myles.vasquez.3/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
@@ -41,7 +41,7 @@ export const FooterSection = () => {
           </a>
 
           <a
-            href="https://www.twitter.com/kosalasfurniture"
+            href="https://x.com/LybrookOmondi"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Twitter"
