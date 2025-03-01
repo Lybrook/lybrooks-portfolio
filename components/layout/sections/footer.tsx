@@ -1,7 +1,7 @@
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import React from "react";
-import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export const FooterSection = () => {
   return (
@@ -52,6 +52,33 @@ export const FooterSection = () => {
               Twitter
             </span>
           </a>
+
+          <a
+            href="https://www.linkedin.com/in/lybrook-omondi-51601a20b/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className="relative group hover:text-gray-400 transition duration-300 ease-in-out transform hover:scale-125"
+          >
+            <FaLinkedin className="size-6" />
+            <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 scale-0 group-hover:scale-100 transition-transform bg-black text-white text-xs px-2 py-1 rounded">
+              LinkedIn
+            </span>
+          </a>
+
+          <a
+            href="https://github.com/Lybrook"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            className="relative group hover:text-gray-400 transition duration-300 ease-in-out transform hover:scale-125"
+          >
+            <FaGithub className="size-6" />
+            <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 scale-0 group-hover:scale-100 transition-transform bg-black text-white text-xs px-2 py-1 rounded">
+              GitHub
+            </span>
+          </a>
+
         </div>
 
         <div className="text-sm md:text-right text-gray-400 space-y-1">
