@@ -79,12 +79,12 @@ export const HeroSection = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1.5, ease: "easeInOut" }}
             >
-              SnaGGsoLLveRs
+              SnaGGsoLLveR
             </motion.span>
           </div>
 
           <p className={`max-w-screen-sm mx-auto text-lg md:text-xl leading-relaxed font-serif ${theme === "light" ? "text-black" : "text-white"}`}>
-            {`Hi, we're more than just a tool, we're a community of passionate full-stack developers 🚀. We thrive on turning complex challenges into creative software solutions. Let's connect and build something amazing together! 🤝`}
+            {`Hi, I'm more than just a tool, I'm a passionate full-stack developers 🚀. I thrive on turning complex challenges into creative software solutions. Let's connect and build something amazing together! 🤝`}
           </p>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
