@@ -27,6 +27,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
+import { useState } from "react";
 
 const formSchema = z.object({
   firstName: z.string().min(2).max(255),
@@ -58,43 +59,43 @@ export const ContactSection = () => {
   }
 
   return (
-    <section id="contact" className="container py-24 sm:py-32">
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <section id='contact' className='container py-24 sm:py-32'>
+      <section className='grid grid-cols-1 md:grid-cols-2 gap-8'>
         <div>
-          <div className="mb-4">
-            <h2 className="text-lg text-primary mb-2 tracking-wider">
+          <div className='mb-4'>
+            <h2 className='text-lg text-primary mb-2 tracking-wider'>
               Contact
             </h2>
 
-            <h2 className="text-3xl md:text-4xl font-bold">Connect With Us</h2>
+            <h2 className='text-3xl md:text-4xl font-bold'>Connect With Us</h2>
           </div>
-          <p className="mb-8 text-muted-foreground lg:w-5/6">
+          <p className='mb-8 text-muted-foreground lg:w-5/6'>
             {/* Placeholder text removed */}
           </p>
 
-          <div className="flex flex-col gap-4">
+          <div className='flex flex-col gap-4'>
             <div>
-              <div className="flex gap-2 mb-1">
+              <div className='flex gap-2 mb-1'>
                 <Building2 />
-                <div className="font-bold">Find us</div>
+                <div className='font-bold'>Find us</div>
               </div>
 
               <div>Kitale, Trans-Nzoia</div>
             </div>
 
             <div>
-              <div className="flex gap-2 mb-1">
+              <div className='flex gap-2 mb-1'>
                 <Phone />
-                <div className="font-bold">Call us</div>
+                <div className='font-bold'>Call us</div>
               </div>
 
               <div>074-834-4514</div>
             </div>
 
             <div>
-              <div className="flex gap-2 mb-1">
+              <div className='flex gap-2 mb-1'>
                 <Mail />
-                <div className="font-bold">Mail US</div>
+                <div className='font-bold'>Mail US</div>
               </div>
 
               <div>omoshlybrook@gmail.com</div>
@@ -102,20 +103,20 @@ export const ContactSection = () => {
           </div>
         </div>
 
-        <Card className="bg-muted/60 dark:bg-card">
-          <CardHeader className="text-primary text-2xl"> </CardHeader>
+        <Card className='bg-muted/60 dark:bg-card'>
+          <CardHeader className='text-primary text-2xl'> </CardHeader>
           <CardContent>
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
-                className="grid w-full gap-4"
+                className='grid w-full gap-4'
               >
-                <div className="flex flex-col md:!flex-row gap-8">
+                <div className='flex flex-col md:!flex-row gap-8'>
                   <FormField
                     control={form.control}
-                    name="firstName"
+                    name='firstName'
                     render={({ field }) => (
-                      <FormItem className="w-full">
+                      <FormItem className='w-full'>
                         <FormLabel>First Name</FormLabel>
                         <FormControl>
                           <Input {...field} />
@@ -126,9 +127,9 @@ export const ContactSection = () => {
                   />
                   <FormField
                     control={form.control}
-                    name="lastName"
+                    name='lastName'
                     render={({ field }) => (
-                      <FormItem className="w-full">
+                      <FormItem className='w-full'>
                         <FormLabel>Last Name</FormLabel>
                         <FormControl>
                           <Input {...field} />
@@ -139,15 +140,15 @@ export const ContactSection = () => {
                   />
                 </div>
 
-                <div className="flex flex-col gap-1.5">
+                <div className='flex flex-col gap-1.5'>
                   <FormField
                     control={form.control}
-                    name="email"
+                    name='email'
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel>Email</FormLabel>
                         <FormControl>
-                          <Input type="email" {...field} />
+                          <Input type='email' {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -155,10 +156,10 @@ export const ContactSection = () => {
                   />
                 </div>
 
-                <div className="flex flex-col gap-1.5">
+                <div className='flex flex-col gap-1.5'>
                   <FormField
                     control={form.control}
-                    name="subject"
+                    name='subject'
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel>Subject</FormLabel>
@@ -168,21 +169,21 @@ export const ContactSection = () => {
                         >
                           <FormControl>
                             <SelectTrigger>
-                              <SelectValue placeholder="Select a subject" />
+                              <SelectValue placeholder='Select a subject' />
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>
-                            <SelectItem value="Web Development">
+                            <SelectItem value='Web Development'>
                               Web Development
                             </SelectItem>
-                            <SelectItem value="Mobile Development">
+                            <SelectItem value='Mobile Development'>
                               Mobile Development
                             </SelectItem>
-                            <SelectItem value="Figma Design">
+                            <SelectItem value='Figma Design'>
                               Figma Design
                             </SelectItem>
-                            <SelectItem value="REST API">REST API</SelectItem>
-                            <SelectItem value="FullStack Project">
+                            <SelectItem value='REST API'>REST API</SelectItem>
+                            <SelectItem value='FullStack Project'>
                               FullStack Project
                             </SelectItem>
                           </SelectContent>
@@ -193,17 +194,17 @@ export const ContactSection = () => {
                   />
                 </div>
 
-                <div className="flex flex-col gap-1.5">
+                <div className='flex flex-col gap-1.5'>
                   <FormField
                     control={form.control}
-                    name="message"
+                    name='message'
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel>Message</FormLabel>
                         <FormControl>
                           <Textarea
                             rows={5}
-                            className="resize-none"
+                            className='resize-none'
                             {...field}
                           />
                         </FormControl>
@@ -214,7 +215,7 @@ export const ContactSection = () => {
                   />
                 </div>
 
-                <Button className="mt-4">Send message</Button>
+                <Button className='mt-4'>Send message</Button>
               </form>
             </Form>
           </CardContent>
