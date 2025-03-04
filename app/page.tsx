@@ -1,3 +1,5 @@
+"use client";
+
 import BenefitsSection from "@/components/layout/sections/benefits";
 import { CommunitySection } from "@/components/layout/sections/community";
 import { ContactSection } from "@/components/layout/sections/contact";
@@ -11,23 +13,16 @@ import { SponsorsSection } from "@/components/layout/sections/sponsors";
 import { TeamSection } from "@/components/layout/sections/team";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
 import { SkillsSection } from "@/components/layout/sections/skills";
+import { useState } from "react";
+import ChatAssistant from "@/components/layout/sections/chat-assistant";
+import Technologies from "@/components/layout/sections/technologies";
 
-export const metadata = {
-  title: "Lybrook's website",
-  description: "FullStack Web developer",
-  openGraph: {
-    type: "website",
-    url: "https://github.com/Lybrook",
-    title: "Lybrooks Portfolio",
-    description: "My website",
-  }
-};
-
-export default function Home() {
+export default function Page() {
   return (
     <>
       <HeroSection />
       {/* <SponsorsSection /> */}
+      <Technologies />
       <SkillsSection />
       <BenefitsSection />
       <FeaturesSection />
@@ -39,6 +34,7 @@ export default function Home() {
       <ContactSection />
       <FAQSection />
       <FooterSection />
+      <ChatAssistant />
     </>
   );
 }
