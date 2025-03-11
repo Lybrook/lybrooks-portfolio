@@ -84,7 +84,7 @@ export const HeroSection = () => {
           </div>
 
           <p className={`max-w-screen-sm mx-auto text-lg md:text-xl leading-relaxed font-serif ${theme === "light" ? "text-black" : "text-white"}`}>
-            {`Hi, I'm more than just a tool, I'm a passionate full-stack developers 🚀. I thrive on turning complex challenges into creative software solutions. Let's connect and build something amazing together! 🤝`}
+            {`Hi, I'm more than just a tool, I'm a passionate full-stack developer 🚀. I thrive on turning complex challenges into creative software solutions. Let's connect and build something amazing together! 🤝`}
           </p>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">

@@ -14,6 +14,20 @@ interface ProjectProps {
 
 const projectList: ProjectProps[] = [
   {
+    image: "/Eventify1.jpeg",
+    title: "Eventify",
+    github: "https://github.comirineCKimeto/GROUP-5",
+    liveDemo: "https://group-5-git-main-irine-kimetos-projects.vercel.app/",
+    description:
+      "An event management and ticketing platform where users can create and manage events and attendees can browse, register, and purchase tickets for events.",
+    details: [
+      "Designed and implemented a full-stack app using Python, Flask, JavaScript, React, and Tailwind",
+      "Developed RESTful APIs for management, ensuring seamless data retrieval and updates.",
+      "Integrated PostgreSQL for structured data storage and implemented CRUD operations for tracking.",
+      "Deployed the backend on Render and the frontend on Vercel for scalability and performance",
+    ],
+  },
+  {
     image: "/furniture1.jpeg",
     title: "Furniture Inventory",
     github: "https://github.com/Lybrook",
@@ -30,13 +44,25 @@ const projectList: ProjectProps[] = [
   {
     image: "/Kosala1.jpeg",
     title: "Furniture Website",
-    github: "https://github.com/Lybrook",
+    github: "https://github.com/Lybrook/furniture",
     liveDemo: "https://kosalas.vercel.app/",
     description:
       "Web application for contacting a carpenter, showcasing completed projects, and displaying company details.",
     details: [
       "Designed and implemented the application using JavaScript, React, and Tailwind CSS for a modern UI/UX.",
       "Implemented lazy loading and React Suspense for optimized route-based code splitting and seamless transitions.",
+      "Utilized the agile development lifecycle to plan, iterate, and refine workflows.",
+    ],
+  },
+  {
+    image: "/Pet1.jpeg",
+    title: "Pet Adoption",
+    github: "https://github.com/Lybrook/Pet-Adoption-App",
+    liveDemo: "https://pet-adoption-app-seven.vercel.app/",
+    description:
+      "Web application for adopting a pet where a user can add to favorites a pet that he wants, and can edit and delete a pet",
+    details: [
+      "Designed and implemented the application using JavaScript, React, and CSS for a modern UI/UX.",
       "Utilized the agile development lifecycle to plan, iterate, and refine workflows.",
     ],
   },
