@@ -100,8 +100,9 @@ const ProjectsSection = () => {
                     <Image
                       src={image}
                       alt={title}
-                      width={128}
-                      height={128}
+                      width={256}
+                      height={256}
+
                       className='w-32 h-32 object-cover mb-6'
                     />
                     <span className='text-5xl text-muted-foreground/15 font-medium transition-all delay-75 group-hover/number:text-muted-foreground/30'>
