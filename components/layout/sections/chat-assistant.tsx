@@ -33,20 +33,20 @@ const MESSAGE_HISTORY_LIMIT = 5;
 const QUICK_OPTIONS: QuickOption[] = [
   {
     text: "👩‍💻 Skills & Experience",
-    message: "Can you tell me about Aga's main skills and experience?",
+    message: "Can you tell me about Lybrook's main skills and experience?",
   },
   {
     text: "🚀 Project Collaboration",
     message:
-      "I'm interested in working with Aga. What's the best way to start?",
+      "I'm interested in working with Lybrook. What's the best way to start?",
   },
   {
     text: "💼 Past Projects",
-    message: "Could you share some examples of Aga's past projects?",
+    message: "Could you share some examples of Lybrook's past projects?",
   },
   {
     text: "⚡ AI Integration",
-    message: "What kind of AI features can Aga implement in projects?",
+    message: "What kind of AI features can Lybrook implement in projects?",
   },
 ];
 
